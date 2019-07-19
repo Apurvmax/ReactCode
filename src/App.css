@@ -7,6 +7,23 @@
   height: 40vmin;
 }
 
+.listTitle{
+  width:20%;
+  height: 100%;
+}
+.maincontainer{
+  position: relative;
+  width: 40%;
+  height: 40%;
+  border:2px solid red;
+  left:50px;
+}
+
+button{
+  padding-right: 10px;
+  color:red;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
