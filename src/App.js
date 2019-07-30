@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo, { ReactComponent } from './logo.svg';
-import './App.css';
+import './styles/style.scss';
 import Modaldemo from './components/ModalOption';
 
 class IndescisionApp extends Component
@@ -122,8 +122,8 @@ clsmodal()
     let subtitle="These is the Indescision App";
      
     return(
-      <div>
-        <Header title={title}/>
+      <div className="main_blk"> 
+        <Header title={title} subtitle={subtitle}/>
         <Action hasoption={this.state.option.length > 0} handlepickoption={this.handlepickoption}/>
         <Option option={this.state.option} removealloption={this.removealloption} removesuboption={this.removesuboption}/>
         <AddOption handleAddoption={this.handleAddoption}/>
@@ -149,9 +149,13 @@ clsmodal()
 
  const Header=(props)=>{
    return(
-   <div>
-     <h1>{props.title}</h1>
-     <h1>{props.subtitle}</h1>
+   <div className="header__block">  
+     <div className="header__title">
+        <h1>{props.title}</h1>
+     </div>
+     <div className="header_subtitle">
+        <h3>{props.subtitle}</h3>
+     </div>
    </div>
    )
  }
@@ -173,6 +177,7 @@ class Action extends Component
         onClick={this.props.handlepickoption}
         disabled={!this.props.hasoption}
         clsmodal={this.props.clsmodal}
+        className="firstbtn"
         >What should I do</button>
       </div>
     );

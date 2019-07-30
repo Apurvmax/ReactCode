@@ -1,0 +1,45 @@
+//main block
+.main_blk{
+    width: 50%;
+    border:2px black solid;
+    padding: 10px;
+    background-color: purple;
+    position: absolute;
+    margin: auto;
+    left:0px;
+    right: 0px;
+    top:0px;
+    bottom: 0px;
+    height: 70%;
+}
+.header__title{
+    
+    color:white;
+   font-weight: 400px;
+   font-size: 3.2erm;
+   
+   margin: 0 ;
+}
+.header__block{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 4.8rem;
+    padding: 1.6rem 0;
+}
+.header_subtitle{
+    color:white;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+//what should I do Button
+.firstbtn{
+    position: absolute;
+    top:200px;
+    
+    
+}
